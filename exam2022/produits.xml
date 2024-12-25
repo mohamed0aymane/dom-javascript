@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<produits année="2022">
+    <produit>
+        <code>0001</code>
+        <nom>PC PORTABLE</nom>
+        <prixTTC>10080,00</prixTTC>
+    </produit>
+    <produit>
+        <code>0003</code>
+        <nom>IMPRIMANTE </nom >
+        <prixTTC>2760,00 </prixTTC>
+    </produit>
+</produits>

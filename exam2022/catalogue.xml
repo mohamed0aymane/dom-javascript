@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<catalogue année="2022">
+<article ref = "P0001" type = "HW">
+    <intitule>PC PORTABLE</intitule>
+    <description>...</description>
+    <prixHT>8400,00</prixHT>
+    <TVA>20,00</TVA>
+</article>
+<article ref = "P0002" type = "SW">
+    <intitule>ANTIVIRUS</intitule>
+    <prixHT>1050,00 </prixHT>
+    <TVA>15,00</TVA>
+</article>
+<article ref = "P0003" type = "HW">
+    <intitule>IMPRIMANTE </intitule>
+    <prixHT>2400,00 </prixHT>
+    <TVA>15,00</TVA>
+</article>
+</catalogue>

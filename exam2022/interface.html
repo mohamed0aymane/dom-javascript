@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Exam 2022</title>
+    </head>
+    <body>
+        <div align="center">
+            <form name="form1">
+                <textarea cols="60" rows="30" name="text1">
+                    ici j'affiche mon fichier xml catalogue.xml
+                </textarea>
+                <h2>Ajouter un nouveau article</h2>
+                <pre>
+                    Reference   : <input type="text" name="reference" id="ref" required/>
+
+                    Type                      <select name="type" id="typeSelect">
+                                                <option value="HW" selected>HardWare</option>
+                                                <option value="SW">SoftWare</option>
+                                              </select>
+
+                    Intitule    : <input type="text" name="intitule" id="intitule" required/>
+
+                    Description : <input type="text" name="description" id="description"/>
+
+                    prixHT      : <input type="text" name="prixHT" id="prixHT" required/>
+
+                    TVA         : <input type="text" name="tva" id="tva" required/>
+
+                    <input type="button" value="ajouter"
+                     onclick="ajouter(ref.value, document.getElementById('typeSelect').value, intitule.value, description.value, prixHT.value, tva.value)"/>
+                </pre>
+                <h2>Modifier un article par la reference</h2>
+                <pre>
+                    
+                    Reference   : <input type="text" name="refMod" id="refMod" required/>
+
+                    Type                      <select name="type" id="typeSelectMod">
+                        <option value="HW" selected>HardWare</option>
+                        <option value="SW">SoftWare</option>
+                      </select>
+
+                    Intitule    : <input type="text" name="intituleMod" id="intituleMod"/>
+
+                    Description : <input type="text" name="descriptionMod" id="descriptionMod"/>
+
+                    PrixHT      : <input type="text" name="prixHTMod" id="prixHTMod"/>
+
+                    TVA         : <input type="text" name="tvaMod" id="tvaMod"/>
+
+                    <input type="button" value="Modifier" 
+                    onclick="modifier(refMod.value, document.getElementById('typeSelectMod').value,intituleMod.value, descriptionMod.value, prixHTMod.value, tvaMod.value)"/>
+
+                </pre>
+            
+
+                <h2>Supprimer un article par le reference</h2>
+                <select name="articles" id="articles"></select>
+                <input type="button" value="supprimer" onclick="supprimer(articles.selectedIndex)">
+                
+                <h2>Réduire de 10% le prixHT de tout article de type "SW" si son prix TTC dépasse 5000</h2>
+                <input type="button" value="Réduire par 10% prixHT" onclick="reduirePrix();"/> 
+            </form>
+        </div>
+        <script src="function.js"></script>
+    </body>
+</html>

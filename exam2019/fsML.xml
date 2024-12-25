@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<racine>
+    <dossier idD="d0-1" nomD="dossier1" date_de_creationD="2024-12-25">
+        <dossier idD="d0-2" nomD="sousdossier1" date_de_creationD="2024-12-25">
+            <fichier idF="f0-2" nomF="sousfichier1" date_de_creationF="2024-12-25" date_de_derniere_modificationF="2024-12-25" tailleF="1024">
+                fichier
+            </fichier>
+        </dossier>
+    </dossier>
+    <fichier idF="f0-1" nomF="fichier1" date_de_creationF="2024-12-25" date_de_derniere_modificationF="2024-12-25" tailleF="2048">
+        
+    </fichier>
+</racine>

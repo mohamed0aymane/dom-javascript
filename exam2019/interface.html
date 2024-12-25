@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Exam 2019</title>
+    </head>
+    <body>
+        <div align="center">
+            <form name="form1">
+                <textarea cols="60" rows="30" name="text1">
+                    ici on affiche le contenu du fichier fsML.xml
+                </textarea>
+                <h2>Ajouter un dossier  </h2>
+                <pre>
+                    Id_Dossier:<input name="idD" id="idD" type="text" required/><br>
+                    Nom_Dossier:<input name="nomD" id="nomD" type="text" required/><br>
+                    Date de creation_Dossier:<input name="date_de_creationD" id="date_de_creationD" type="date" required/><br>
+
+                    Id_Fichier:<input name="idF" id="idF" type="text" required/><br>
+                    Nom_Fichier:<input name="nomF" id="nomF" type="text" required/><br>
+                    Date de creation_Fichier:<input name="date_de_creationF" id="date_de_creationF" type="date" required/><br>
+                    
+                    Date de modification:<input name="date_de_modificationF" id="date_de_modificationF" type="date" /><br>
+                    Taille: <input name="tailleF" id="tailleF" type="number"/><br>
+                    Contenu de fichier: <input name="contenuF" id="contenuF" type="text"/><br>
+                   
+                    <input type="button" value="ajouter un dossier" 
+                        onclick="ajouter(idD.value, nomD.value, date_de_creationD.value, idF.value, nomF.value, date_de_creationF.value, date_de_modificationF.value, tailleF.value, contenuF.value);"/>
+
+                </pre>
+
+               
+
+                <h2>Supprimer un dossier </h2>
+                <select name="dossiers" id="dossiers"></select>
+                <input type="button" value="supprimer dossier" onclick="supprimerdossier(dossiers.selectedIndex)"><br>
+              
+            </form>
+
+
+        </div>
+        <script src="function.js"></script>
+    </body>
+</html>
